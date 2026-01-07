@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traditional Wear - Riwayyat</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div href="index.html" class="logo">Riwayyat</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="traditional.html" class="active">Traditional</a></li>
+                <li><a href="party-wear.html">Party Wear</a></li>
+                <li><a href="western.html">Western</a></li>
+                <li><a href="jewellery.html">Jewellery</a></li>
+                <li><a href="cart.html">Cart <span id="cart-count"></span></a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero"
+        style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('traditional-luxury.png') no-repeat center center/cover; padding: 100px 20px;">
+        <div class="hero-content">
+            <h1>Traditional Wear Collection</h1>
+            <p>Authentic Indian attire for weddings and festive occasions</p>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products">
+        <div class="container">
+            <h2>Available Traditional Outfits</h2>
+
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product-card" data-category="traditional" data-id="TRD001">
+                    <img src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=600&h=800&fit=crop"
+                        alt="Bridal Lehenga">
+                    <div class="product-info">
+                        <h3>Royal Bridal Lehenga</h3>
+                        <p>Stunning red and gold bridal lehenga with intricate embroidery</p>
+                        <div class="price">₹8,000 / 3 days</div>
+                        <div class="product-details">
+                            <span class="detail-badge">Size: S-XL</span>
+                            <span class="detail-badge">Designer</span>
+                        </div>
+                        <button class="btn-primary" style="margin-top: 1rem; width: 100%;" onclick="bookNow(this)">Book
+                            Now</button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card" data-category="traditional" data-id="TRD002">
+                    <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=600&h=800&fit=crop"
+                        alt="Designer Saree">
+                    <div class="product-info">
+                        <h3>Silk Designer Saree</h3>
+                        <p>Elegant Kanjeevaram silk saree with golden border</p>
+                        <div class="price">₹3,500 / 3 days</div>
+                        <div class="product-details">
+                            <span class="detail-badge">One Size</span>
+                            <span class="detail-badge">Premium</span>
+                        </div>
+                        <button class="btn-primary" style="margin-top: 1rem; width: 100%;" onclick="bookNow(this)">Book
+                            Now</button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card" data-category="traditional" data-id="TRD003">
+                    <img src="https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=600&h=800&fit=crop"
+                        alt="Sherwani">
+                    <div class="product-info">
+                        <h3>Classic Sherwani</h3>
+                        <p>Ivory sherwani with golden embroidery for groom</p>
+                        <div class="price">₹5,000 / 3 days</div>
+                        <div class="product-details">
+                            <span class="detail-badge">Size: 38-44</span>
+                            <span class="detail-badge">Groom Special</span>
+                        </div>
+                        <button class="btn-primary" style="margin-top: 1rem; width: 100%;" onclick="bookNow(this)">Book
+                            Now</button>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card" data-category="traditional" data-id="TRD004">
+                    <img src="https://images.unsplash.com/photo-1596783074918-c84cb06531ca?w=600&h=800&fit=crop"
+                        alt="Anarkali Suit">
+                    <div class="product-info">
+                        <h3>Anarkali Suit</h3>
+                        <p>Beautiful pastel anarkali with delicate embroidery</p>
+                        <div class="price">₹2,500 / 3 days</div>
+                        <div class="product-details">
+                            <span class="detail-badge">Size: S-XXL</span>
+                            <span class="detail-badge">Festive</span>
+                        </div>
+                        <button class="btn-primary" style="margin-top: 1rem; width: 100%;" onclick="bookNow(this)">Book
+                            Now</button>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card" data-category="traditional" data-id="TRD005">
+                    <img src="https://images.unsplash.com/photo-1583391733981-36c37d983627?w=600&h=800&fit=crop"
+                        alt="Festive Lehenga">
+                    <div class="product-info">
+                        <h3>Festive Lehenga Choli</h3>
+                        <p>Vibrant mirror work lehenga perfect for sangeet</p>
+                        <div class="price">₹4,500 / 3 days</div>
+                        <div class="product-details">
+                            <span class="detail-badge">Size: S-L</span>
+                            <span class="detail-badge">Sangeet</span>
+                        </div>
+                        <button class="btn-primary" style="margin-top: 1rem; width: 100%;" onclick="bookNow(this)">Book
+                            Now</button>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card" data-category="traditional" data-id="TRD006">
+                    <img src="https://images.unsplash.com/photo-1585241645927-c7a8e5840c42?w=600&h=800&fit=crop"
+                        alt="Indo-Western">
+                    <div class="product-info">
+                        <h3>Indo-Western Sherwani</h3>
+                        <p>Modern take on traditional sherwani with jacket</p>
+                        <div class="price">₹4,000 / 3 days</div>
+                        <div class="product-details">
+                            <span class="detail-badge">Size: 38-42</span>
+                            <span class="detail-badge">Trending</span>
+                        </div>
+                        <button class="btn-primary" style="margin-top: 1rem; width: 100%;" onclick="bookNow(this)">Book
+                            Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rental Information -->
+            <div class="rental-info" style="margin-top: 4rem; padding: 2rem; background: white; border-radius: 15px;">
+                <h3 style="color: #6366f1; margin-bottom: 1rem;">Rental Terms & Conditions</h3>
+                <ul style="line-height: 2; color: #555;">
+                    <li>Minimum rental period: 3 days</li>
+                    <li>Security deposit: 50% of rental price (fully refundable)</li>
+                    <li>Free alterations available</li>
+                    <li>Professional dry cleaning included</li>
+                    <li>Home delivery and pickup within city limits</li>
+                    <li>Advance booking required (minimum 7 days before event)</li>
+                    <li>Late return charges: ₹500 per day</li>
+                    <li>Damage charges will be deducted from security deposit</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Riwayyat</h3>
+                    <p>Your trusted partner for special occasion rentals</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="traditional.html">Traditional</a></li>
+                        <li><a href="party-wear.html">Party Wear</a></li>
+                        <li><a href="western.html">Western</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: info@riwayyatrentals.com</p>
+                    <p>Phone: +91 98765 43210</p>
+                    <p>Address: 123 Fashion Street, Undri</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Riwayyat. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="index.js"></script>
+    <script src="cart.js"></script>
+</body>
+
+</html>

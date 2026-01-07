@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Western Wear - Riwayyat</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Riwayyat</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="traditional.html">Traditional</a></li>
+                <li><a href="party-wear.html">Party Wear</a></li>
+                <li><a href="western.html" class="active">Western</a></li>
+                <li><a href="jewellery.html">Jewellery</a></li>
+                <li><a href="cart.html">Cart <span id="cart-count"></span></a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero"
+        style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('western-luxury.png') no-repeat center center/cover; padding: 100px 20px;">
+        <div class="hero-content">
+            <h1>Western Wear Collection</h1>
+            <p>Contemporary suits, blazers, and formal wear</p>
+        </div>
+    </section>
+
+    <section class="products">
+        <div class="container">
+            <h2>Modern Western Outfits</h2>
+
+            <div class="product-grid">
+                <div class="product-card" data-category="western" data-id="WST001">
+                    <img src="https://images.unsplash.com/photo-1507680434567-5739c80be1ac?w=600&h=800&fit=crop"
+                        alt="Business Suit">
+                    <div class="product-info">
+                        <h3>Classic Business Suit</h3>
+                        <p>Navy blue three-piece suit for formal occasions</p>
+                        <div class="price">₹3,500 / 2 days</div>
+                        <div class="product-details">
+                            <span class="detail-badge">Size: 38-44</span>
+                            <span class="detail-badge">Formal</span>
+                        </div>
+                        <button class="btn-primary" style="margin-top: 1rem; width: 100%;" onclick="bookNow(this)">Book
+                            Now</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="western" data-id="WST002">
+                    <img src="https://images.unsplash.com/photo-1594938291221-94f18cbb5660?w=600&h=800&fit=crop"
+                        alt="Tuxedo">
+                    <div class="product-info">
+                        <h3>Black Tuxedo</h3>
+                        <p>Premium tuxedo with satin lapels</p>
+                        <div class="price">₹5,000 / 2 days</div>
+                        <div class="product-details">
+                            <span class="detail-badge">Size: 38-42</span>
+                            <span class="detail-badge">Premium</span>
+                        </div>
+                        <button class="btn-primary" style="margin-top: 1rem; width: 100%;" onclick="bookNow(this)">Book
+                            Now</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="western" data-id="WST003">
+                    <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=600&h=800&fit=crop"
+                        alt="Blazer">
+                    <div class="product-info">
+                        <h3>Designer Blazer</h3>
+                        <p>Stylish blazer with contrasting pants</p>
+                        <div class="price">₹2,500 / 2 days</div>
+                        <div class="product-details">
+                            <span class="detail-badge">Size: S-XL</span>
+                            <span class="detail-badge">Casual Formal</span>
+                        </div>
+                        <button class="btn-primary" style="margin-top: 1rem; width: 100%;" onclick="bookNow(this)">Book
+                            Now</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="western" data-id="WST004">
+                    <img src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?w=600&h=800&fit=crop"
+                        alt="Pantsuit">
+                    <div class="product-info">
+                        <h3>Women's Pantsuit</h3>
+                        <p>Elegant power suit for professional events</p>
+                        <div class="price">₹3,000 / 2 days</div>
+                        <div class="product-details">
+                            <span class="detail-badge">Size: S-L</span>
+                            <span class="detail-badge">Corporate</span>
+                        </div>
+                        <button class="btn-primary" style="margin-top: 1rem; width: 100%;" onclick="bookNow(this)">Book
+                            Now</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="western" data-id="WST005">
+                    <img src="https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?w=600&h=800&fit=crop"
+                        alt="Wedding Suit">
+                    <div class="product-info">
+                        <h3>Wedding Suit</h3>
+                        <p>Light grey suit perfect for daytime weddings</p>
+                        <div class="price">₹4,000 / 2 days</div>
+                        <div class="product-details">
+                            <span class="detail-badge">Size: 38-44</span>
+                            <span class="detail-badge">Wedding</span>
+                        </div>
+                        <button class="btn-primary" style="margin-top: 1rem; width: 100%;" onclick="bookNow(this)">Book
+                            Now</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="western" data-id="WST006">
+                    <img src="https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?w=600&h=800&fit=crop"
+                        alt="Casual Blazer">
+                    <div class="product-info">
+                        <h3>Smart Casual Set</h3>
+                        <p>Trendy blazer with jeans combination</p>
+                        <div class="price">₹2,000 / 2 days</div>
+                        <div class="product-details">
+                            <span class="detail-badge">Size: M-XL</span>
+                            <span class="detail-badge">Smart Casual</span>
+                        </div>
+                        <button class="btn-primary" style="margin-top: 1rem; width: 100%;" onclick="bookNow(this)">Book
+                            Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rental-info" style="margin-top: 4rem; padding: 2rem; background: white; border-radius: 15px;">
+                <h3 style="color: #6366f1; margin-bottom: 1rem;">Western Wear Rental Details</h3>
+                <ul style="line-height: 2; color: #555;">
+                    <li>Rental period: 2 days minimum</li>
+                    <li>Security deposit: 35% of rental price</li>
+                    <li>Complimentary shirts and ties included</li>
+                    <li>Professional pressing and steaming included</li>
+                    <li>Shoe rental available (additional ₹500)</li>
+                    <li>Custom tailoring for perfect fit</li>
+                    <li>Corporate bulk booking discounts available</li>
+                    <li>Book 3 days in advance for hassle-free service</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Elegance Rentals</h3>
+                    <p>Your trusted partner for special occasion rentals</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="traditional.html">Traditional</a></li>
+                        <li><a href="party-wear.html">Party Wear</a></li>
+                        <li><a href="western.html">Western</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: info@riwayyatrentals.com</p>
+                    <p>Phone: +91 98765 43210</p>
+                    <p>Address: 123 Fashion Street, Undri</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Riwayyat. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="index.js"></script>
+    <script src="cart.js"></script>
+</body>
+
+</html>

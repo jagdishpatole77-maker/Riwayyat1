@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riwayyat - Premium Luxury Rentals</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="chatbot.css">
+    <link rel="stylesheet" href="star-animation.css">
+
+    <!-- Auth Guard: Redirect to login if not signed in -->
+    <script type="module" src="auth-guard.js"></script>
+    <style>
+        body {
+            display: none;
+        }
+    </style> <!-- Hide content until auth check completes -->
+</head>
+
+<body class="with-stars">
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Riwayyat</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="traditional.html">Traditional</a></li>
+                <li><a href="party-wear.html">Party Wear</a></li>
+                <li><a href="western.html">Western</a></li>
+                <li><a href="jewellery.html">Jewellery</a></li>
+                <li><a href="cart.html">Cart <span id="cart-count"></span></a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="login.html" class="btn-logout">Log Out</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero hero-large">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Rent Your Perfect Look</h1>
+            <p>Experience affordable luxury with our premium collection of designer outfits and authentic jewellery.</p>
+            <div class="hero-buttons">
+                <a href="#categories" class="btn-primary">Explore Collections</a>
+                <a href="contact.html" class="btn-outline">Book an Appointment</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose Riwayyat?</h2>
+                <div class="divider-gold"></div>
+            </div>
+
+            <div class="features">
+                <div class="feature-card">
+                    <div class="icon"><i class="fas fa-gem"></i></div>
+                    <h3>Premium Quality</h3>
+                    <p>Designer outfits and authentic jewelry pieces curated for your special moments.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon"><i class="fas fa-tags"></i></div>
+                    <h3>Affordable Luxury</h3>
+                    <p>Look like a million bucks without breaking the bank. Smart renting for smart people.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon"><i class="fas fa-truck"></i></div>
+                    <h3>Doorstep Delivery</h3>
+                    <p>Hassle-free delivery and pickup service right at your doorstep.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon"><i class="fas fa-sparkles"></i></div>
+                    <h3>Hygiene First</h3>
+                    <p>Every item is professionally dry-cleaned and sanitized before it reaches you.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="categories">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Collections</h2>
+                <div class="divider-gold"></div>
+            </div>
+            <div class="category-grid">
+                <div class="category-card">
+                    <img src="traditional-luxury.png" alt="Traditional Wear"
+                        onerror="this.src='https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&q=80'">
+                    <div class="category-overlay">
+                        <h3>Traditional Wear</h3>
+                        <p>Sarees, Lehengas & Sherwanis</p>
+                        <a href="traditional.html" class="btn-text">View Collection <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="party-luxury.png" alt="Party Wear"
+                        onerror="this.src='https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&q=80'">
+                    <div class="category-overlay">
+                        <h3>Party Wear</h3>
+                        <p>Gowns & Cocktail Dresses</p>
+                        <a href="party-wear.html" class="btn-text">View Collection <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="western-luxury.png" alt="Western Wear"
+                        onerror="this.src='https://images.unsplash.com/photo-1594938298603-c8148c47e356?auto=format&fit=crop&q=80'">
+                    <div class="category-overlay">
+                        <h3>Western Wear</h3>
+                        <p>Suits & Contemporary Fashion</p>
+                        <a href="western.html" class="btn-text">View Collection <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="jewellery-luxury.png" alt="Jewellery"
+                        onerror="this.src='https://images.unsplash.com/photo-1515562141207-7a88fb052254?auto=format&fit=crop&q=80'">
+                    <div class="category-overlay">
+                        <h3>Jewellery</h3>
+                        <p>Necklaces, Earrings & Sets</p>
+                        <a href="jewellery.html" class="btn-text">View Collection <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2>How It Works</h2>
+                <div class="divider-gold"></div>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Select</h3>
+                    <p>Browse our exclusive collection and pick your favorite look.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Book</h3>
+                    <p>Provide your dates and measurements to reserve your outfit.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Flaunt</h3>
+                    <p>Receive it professionally cleaned and shine at your event.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Return</h3>
+                    <p>We'll pick it up from your doorstep. No hassle.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <button id="backToTop" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section brand-section">
+                    <div class="logo footer-logo">Riwayyat</div>
+                    <p>Your trusted partner for special occasion rentals. Bringing luxury fashion to your doorstep.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Explore</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="traditional.html">Traditional</a></li>
+                        <li><a href="party-wear.html">Party Wear</a></li>
+                        <li><a href="western.html">Western</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-envelope"></i> riwayyatrentals@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Fashion Street, Undri</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Riwayyat. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+    <script src="cart.js"></script>
+    <script src="chatbot.js"></script>
+
+    <!-- Chatbot UI -->
+    <button class="chat-btn" onclick="toggleChat()">
+        <i class="fas fa-comments"></i>
+    </button>
+
+    <div class="chat-window" id="chat-window">
+        <div class="chat-header">
+            <span>Riwayyat Assistant</span>
+            <span onclick="toggleChat()" style="cursor:pointer;"><i class="fas fa-times"></i></span>
+        </div>
+        <div class="chat-messages" id="chat-messages">
+            <div class="message bot-message">Hello! How can I assist you? Input: contact,greivance,price,<br>location.
+            </div>
+        </div>
+        <div class="chat-input-area">
+            <input type="text" id="chat-input" placeholder="Type a message..." onkeypress="handleEnter(event)">
+            <button onclick="sendMessage()"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+    </div>
+    <script src="star-animation.js"></script>
+</body>
+
+</html>

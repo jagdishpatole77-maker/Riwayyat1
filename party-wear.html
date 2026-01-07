@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Party Wear - Riwayyat </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div href="index.html" class="logo">Riwayyat </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="traditional.html">Traditional</a></li>
+                <li><a href="party-wear.html" class="active">Party Wear</a></li>
+                <li><a href="western.html">Western</a></li>
+                <li><a href="jewellery.html">Jewellery</a></li>
+                <li><a href="cart.html">Cart <span id="cart-count"></span></a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero"
+        style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('party-luxury.png') no-repeat center center/cover; padding: 100px 20px;">
+        <div class="hero-content">
+            <h1>Party Wear Collection</h1>
+            <p>Elegant gowns and cocktail dresses for every celebration</p>
+        </div>
+    </section>
+
+    <section class="products">
+        <div class="container">
+            <h2>Glamorous Party Outfits</h2>
+
+            <div class="product-grid">
+                <div class="product-card" data-category="party" data-id="PTY001">
+                    <img src="https://images.unsplash.com/photo-1566174053879-31528523f8ae?w=600&h=800&fit=crop"
+                        alt="Evening Gown">
+                    <div class="product-info">
+                        <h3>Red Carpet Gown</h3>
+                        <p>Stunning floor-length gown with sequin detailing</p>
+                        <div class="price">₹4,500 / 2 days</div>
+                        <div class="product-details">
+                            <span class="detail-badge">Size: XS-L</span>
+                            <span class="detail-badge">Evening</span>
+                        </div>
+                        <button class="btn-primary" style="margin-top: 1rem; width: 100%;" onclick="bookNow(this)">Book
+                            Now</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="party" data-id="PTY002">
+                    <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=600&h=800&fit=crop"
+                        alt="Cocktail Dress">
+                    <div class="product-info">
+                        <h3>Cocktail Dress</h3>
+                        <p>Elegant knee-length dress perfect for parties</p>
+                        <div class="price">₹2,500 / 2 days</div>
+                        <div class="product-details">
+                            <span class="detail-badge">Size: S-XL</span>
+                            <span class="detail-badge">Cocktail</span>
+                        </div>
+                        <button class="btn-primary" style="margin-top: 1rem; width: 100%;" onclick="bookNow(this)">Book
+                            Now</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="party" data-id="PTY003">
+                    <img src="https://images.unsplash.com/photo-1560243563-062bfc001d68?w=600&h=800&fit=crop"
+                        alt="Ball Gown">
+                    <div class="product-info">
+                        <h3>Princess Ball Gown</h3>
+                        <p>Fairy tale ball gown with tulle and crystals</p>
+                        <div class="price">₹6,000 / 2 days</div>
+                        <div class="product-details">
+                            <span class="detail-badge">Size: XS-M</span>
+                            <span class="detail-badge">Premium</span>
+                        </div>
+                        <button class="btn-primary" style="margin-top: 1rem; width: 100%;" onclick="bookNow(this)">Book
+                            Now</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="party" data-id="PTY004">
+                    <img src="https://images.unsplash.com/photo-1539008835657-9e8e9680c956?w=600&h=800&fit=crop"
+                        alt="Sequin Dress">
+                    <div class="product-info">
+                        <h3>Sequin Party Dress</h3>
+                        <p>Shimmering gold sequin dress for special nights</p>
+                        <div class="price">₹3,500 / 2 days</div>
+                        <div class="product-details">
+                            <span class="detail-badge">Size: S-L</span>
+                            <span class="detail-badge">Sparkle</span>
+                        </div>
+                        <button class="btn-primary" style="margin-top: 1rem; width: 100%;" onclick="bookNow(this)">Book
+                            Now</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="party" data-id="PTY005">
+                    <img src="https://images.unsplash.com/photo-1594633313593-bab3825d0caf?w=600&h=800&fit=crop"
+                        alt="Designer Gown">
+                    <div class="product-info">
+                        <h3>Designer Evening Gown</h3>
+                        <p>Luxury designer gown with elegant draping</p>
+                        <div class="price">₹7,500 / 2 days</div>
+                        <div class="product-details">
+                            <span class="detail-badge">Size: S-M</span>
+                            <span class="detail-badge">Designer</span>
+                        </div>
+                        <button class="btn-primary" style="margin-top: 1rem; width: 100%;" onclick="bookNow(this)">Book
+                            Now</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="party" data-id="PTY006">
+                    <img src="https://images.unsplash.com/photo-1596783074918-c84cb06531ca?w=600&h=800&fit=crop"
+                        alt="Cocktail Jumpsuit">
+                    <div class="product-info">
+                        <h3>Statement Jumpsuit</h3>
+                        <p>Modern jumpsuit with embellished bodice</p>
+                        <div class="price">₹3,000 / 2 days</div>
+                        <div class="product-details">
+                            <span class="detail-badge">Size: S-L</span>
+                            <span class="detail-badge">Trendy</span>
+                        </div>
+                        <button class="btn-primary" style="margin-top: 1rem; width: 100%;" onclick="bookNow(this)">Book
+                            Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rental-info" style="margin-top: 4rem; padding: 2rem; background: white; border-radius: 15px;">
+                <h3 style="color: #6366f1; margin-bottom: 1rem;">Party Wear Rental Guidelines</h3>
+                <ul style="line-height: 2; color: #555;">
+                    <li>Minimum rental: 2 days (perfect for weekend events)</li>
+                    <li>Security deposit: 40% of rental price</li>
+                    <li>Free fitting session before event</li>
+                    <li>Accessories recommendations available</li>
+                    <li>Same-day delivery for urgent bookings (extra charge applies)</li>
+                    <li>Book at least 5 days in advance for guaranteed availability</li>
+                    <li>Extension possible (₹1000/day, subject to availability)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Riwayyat</h3>
+                    <p>Your trusted partner for special occasion rentals</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="traditional.html">Traditional</a></li>
+                        <li><a href="party-wear.html">Party Wear</a></li>
+                        <li><a href="western.html">Western</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: info@riwayyatrentals.com</p>
+                    <p>Phone: +91 98765 43210</p>
+                    <p>Address: 123 Fashion Street, Undri</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Riwayyat. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="index.js"></script>
+    <script src="cart.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+/* Google Sign-In Button */
+.btn-google {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: #757575;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    /* Matches other buttons if they have radius, otherwise adjust */
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 10px;
+    /* Space between Login and Google button */
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.btn-google:hover {
+    background-color: #f1f1f1;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.btn-google img {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewellery Collection - Riwayyat</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div href="index.html" class="logo">Riwayyat</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="traditional.html">Traditional</a></li>
+                <li><a href="party-wear.html">Party Wear</a></li>
+                <li><a href="western.html">Western</a></li>
+                <li><a href="jewellery.html" class="active">Jewellery</a></li>
+                <li><a href="cart.html">Cart <span id="cart-count"></span></a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero"
+        style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('jewellery-luxury.png') no-repeat center center/cover; padding: 100px 20px;">
+        <div class="hero-content">
+            <h1>Jewellery Collection</h1>
+            <p>Exquisite jewellery to complement your perfect look</p>
+        </div>
+    </section>
+
+    <section class="products">
+        <div class="container">
+            <h2>Stunning Jewellery Pieces</h2>
+
+            <div class="product-grid">
+                <div class="product-card" data-category="jewelry" data-id="JWL001">
+                    <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=600&h=800&fit=crop"
+                        alt="Bridal Jewelry Set">
+                    <div class="product-info">
+                        <h3>Bridal Jewellery Set</h3>
+                        <p>Complete bridal set with necklace, earrings, and maang tikka</p>
+                        <div class="price">₹6,000 / 3 days</div>
+                        <div class="product-details">
+                            <span class="detail-badge">Kundan</span>
+                            <span class="detail-badge">Bridal</span>
+                        </div>
+                        <button class="btn-primary" style="margin-top: 1rem; width: 100%;" onclick="bookNow(this)">Book
+                            Now</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="jewelry" data-id="JWL002">
+                    <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=600&h=800&fit=crop"
+                        alt="Diamond Necklace">
+                    <div class="product-info">
+                        <h3>Diamond Necklace Set</h3>
+                        <p>Elegant diamond necklace with matching earrings</p>
+                        <div class="price">₹8,000 / 3 days</div>
+                        <div class="product-details">
+                            <span class="detail-badge">Premium</span>
+                            <span class="detail-badge">Diamond</span>
+                        </div>
+                        <button class="btn-primary" style="margin-top: 1rem; width: 100%;" onclick="bookNow(this)">Book
+                            Now</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="jewelry" data-id="JWL003">
+                    <img src="https://images.unsplash.com/photo-1601121141461-9d6647bca1ed?w=600&h=800&fit=crop"
+                        alt="Polki Set">
+                    <div class="product-info">
+                        <h3>Polki Jewellery Set</h3>
+                        <p>Traditional polki set with emeralds and rubies</p>
+                        <div class="price">₹5,500 / 3 days</div>
+                        <div class="product-details">
+                            <span class="detail-badge">Polki</span>
+                            <span class="detail-badge">Traditional</span>
+                        </div>
+                        <button class="btn-primary" style="margin-top: 1rem; width: 100%;" onclick="bookNow(this)">Book
+                            Now</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="jewelry" data-id="JWL004">
+                    <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=600&h=800&fit=crop"
+                        alt="Choker Set">
+                    <div class="product-info">
+                        <h3>Statement Choker</h3>
+                        <p>Modern choker necklace with contemporary design</p>
+                        <div class="price">₹3,500 / 2 days</div>
+                        <div class="product-details">
+                            <span class="detail-badge">Modern</span>
+                            <span class="detail-badge">Party</span>
+                        </div>
+                        <button class="btn-primary" style="margin-top: 1rem; width: 100%;" onclick="bookNow(this)">Book
+                            Now</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="jewelry" data-id="JWL005">
+                    <img src="https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?w=600&h=800&fit=crop"
+                        alt="Temple Jewelry">
+                    <div class="product-info">
+                        <h3>Temple Jewellery Set</h3>
+                        <p>South Indian temple work jewelry in antique gold</p>
+                        <div class="price">₹4,500 / 3 days</div>
+                        <div class="product-details">
+                            <span class="detail-badge">Temple</span>
+                            <span class="detail-badge">Antique</span>
+                        </div>
+                        <button class="btn-primary" style="margin-top: 1rem; width: 100%;" onclick="bookNow(this)">Book
+                            Now</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="jewelry" data-id="JWL006">
+                    <img src="https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=600&h=800&fit=crop"
+                        alt="Pearl Set">
+                    <div class="product-info">
+                        <h3>Pearl Jewellery Set</h3>
+                        <p>Elegant pearl necklace with matching accessories</p>
+                        <div class="price">₹3,000 / 2 days</div>
+                        <div class="product-details">
+                            <span class="detail-badge">Pearls</span>
+                            <span class="detail-badge">Elegant</span>
+                        </div>
+                        <button class="btn-primary" style="margin-top: 1rem; width: 100%;" onclick="bookNow(this)">Book
+                            Now</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="jewelry" data-id="JWL007">
+                    <img src="https://images.unsplash.com/photo-1603561591411-07134e71a2a9?w=600&h=800&fit=crop"
+                        alt="Meenakari Jewelry">
+                    <div class="product-info">
+                        <h3>Meenakari Set</h3>
+                        <p>Colorful meenakari work with traditional motifs</p>
+                        <div class="price">₹4,000 / 3 days</div>
+                        <div class="product-details">
+                            <span class="detail-badge">Meenakari</span>
+                            <span class="detail-badge">Colorful</span>
+                        </div>
+                        <button class="btn-primary" style="margin-top: 1rem; width: 100%;" onclick="bookNow(this)">Book
+                            Now</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="jewelry" data-id="JWL008">
+                    <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=600&h=800&fit=crop"
+                        alt="Chandbali Earrings">
+                    <div class="product-info">
+                        <h3>Chandbali Earrings</h3>
+                        <p>Traditional chandbali with intricate detailing</p>
+                        <div class="price">₹1,500 / 2 days</div>
+                        <div class="product-details">
+                            <span class="detail-badge">Earrings Only</span>
+                            <span class="detail-badge">Classic</span>
+                        </div>
+                        <button class="btn-primary" style="margin-top: 1rem; width: 100%;" onclick="bookNow(this)">Book
+                            Now</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="jewelry" data-id="JWL009">
+                    <img src="https://images.unsplash.com/photo-1630019329007-bc257b8d7137?w=600&h=800&fit=crop"
+                        alt="Maang Tikka">
+                    <div class="product-info">
+                        <h3>Designer Maang Tikka</h3>
+                        <p>Beautiful maang tikka with side chains</p>
+                        <div class="price">₹2,000 / 3 days</div>
+                        <div class="product-details">
+                            <span class="detail-badge">Maang Tikka</span>
+                            <span class="detail-badge">Bridal</span>
+                        </div>
+                        <button class="btn-primary" style="margin-top: 1rem; width: 100%;" onclick="bookNow(this)">Book
+                            Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rental-info" style="margin-top: 4rem; padding: 2rem; background: white; border-radius: 15px;">
+                <h3 style="color: #6366f1; margin-bottom: 1rem;">Jewellery Rental Information</h3>
+                <ul style="line-height: 2; color: #555;">
+                    <li>Rental period: 2-3 days based on category</li>
+                    <li>Security deposit: 60% of rental price (fully refundable)</li>
+                    <li>All pieces are cleaned and sanitized</li>
+                    <li>Insurance available for high-value items</li>
+                    <li>Mix and match pieces available</li>
+                    <li>Jewelry box and safe storage pouch included</li>
+                    <li>Book at least 10 days in advance for bridal sets</li>
+                    <li>Photo verification required at pickup and return</li>
+                    <li>Any damage will be assessed and charged accordingly</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Riwayyat</h3>
+                    <p>Your trusted partner for special occasion rentals</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="traditional.html">Traditional</a></li>
+                        <li><a href="party-wear.html">Party Wear</a></li>
+                        <li><a href="western.html">Western</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: info@riwayyatrentals.com</p>
+                    <p>Phone: +91 98765 43210</p>
+                    <p>Address: 123 Fashion Street, Undri</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Riwayyat. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="index.js"></script>
+    <script src="cart.js"></script>
+</body>
+
+</html>
